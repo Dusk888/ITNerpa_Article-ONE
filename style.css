@@ -1,0 +1,1342 @@
+/*Отступ от края страницы в пикселях*/
+#nerpa {
+    margin: 34px;
+}
+
+/*Отступ от края страницы в пикселях для 'вывода'*/
+#beluga {
+margin: 25px;
+}
+
+/* ФОН Шапки сайта */
+.video {
+position:relative;
+padding-bottom: 56.25%;
+z-index: 1;
+}
+.video_media {
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: auto;
+}
+
+.intro{
+max-height: 81vh;   /*Обрезание видео (Keyboard)*/
+overflow: hidden;
+position: relative;
+}
+.intro:after{
+content: "";
+display: block;
+position: absolute;
+top: 0%;
+left: 0%;
+z-index: 2;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.244)   /*Прозрачность видео (Keyboard)*/
+}
+.intro__content {   /*Интро на сайте (Keyboard)*/ 
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0%;
+left: 0%;
+z-index: 3;
+}
+.intro__title {   /*Предложение интро на сайте (Keyboard)*/ 
+font-size: 80px;
+color: #ffffff;
+margin: 0%;
+text-align: center;
+font-family: LUCIDA SANS UNICODE;
+}
+.container {    /*Ширина от заголовка на видео до его границ на странице*/
+width: 100%;
+max-width: 1480px;
+margin: 0 auto;
+}
+
+.bubba {
+padding-left: 20px;
+background: #ffffff;
+margin: 20px;
+}
+
+
+/*Комментарий, который как квадрат*/
+.attention {   
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px auto;
+  border: 6px solid #f53e2a;
+  border-top-width: 6px;
+  border-right-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 6px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+     /* 1 */
+li{
+font-size: 22px;  
+padding-left: 0px; 
+  
+}
+li:not(:nth-last-child){
+margin-bottom: 2px;
+}
+ol {
+list-style: none;
+}
+
+ol{
+counter-reset: myCounter;
+}
+
+
+/*Комментарий, который в конце страницы*/
+blockquote {     
+padding: 20px;
+border-top: 4px solid #ff8800;
+background: rgba(244, 247, 252, 0.281);
+box-shadow: 0px 0px 5px #c9c9c9;
+border-radius: 10px 0px;
+line-height: 1.5;
+margin-bottom: 20px;
+font-family: verdana;
+box-sizing: inherit;
+font-size: 12pt;
+}
+
+
+/* Комментарий, который для главы "Облачная безопасность" */
+.flash{       
+font-family: verdana;
+padding: 20px;
+margin: 10px;
+box-sizing: border-box;
+border-radius: 35px;
+background: rgba(114, 94, 242, 0.05);
+font-size: 16.5px;
+line-height: 31px;
+border: 2px solid #6654D9;
+box-shadow: 0px 0px 5px #c9c9c9;
+}
+
+
+      /* 2 */
+ol {
+list-style-type: none; 
+counter-reset: num;
+margin: 5 5  45px;
+padding: 15px 0 5px 0;
+font-size: 22px;
+}
+ol li {
+position: relative;	
+margin: 0 0 0 0;
+padding: 0 0 10px 0;
+line-height: 1.4;
+}
+ol li:before {
+content: counter(num); 
+counter-increment: num;
+display: inline-block;
+position: absolute;
+top:calc(2px);
+left: 0px;
+width: 32px;
+height: 31px;
+background: #ef6780;
+color: #fff;
+text-align: center;
+line-height: 28px;
+font-size: 22px;
+border-radius: 10px;
+}
+
+
+/* Кнопка*/
+button{          
+padding: 5px 25px 5px 25px;
+outline: none;
+border: none;
+border-radius: 26px;
+background-color: #19eaf9;
+cursor: pointer;
+color: #000000cd;
+font-weight: 550;
+font-size: 20px;
+letter-spacing: 2px;
+box-shadow: 5px 10px 10px #ee5a6e;
+}
+button:hover {
+cursor: pointer;
+box-shadow: 0 0 5px #19eaf9, 0 0 25px #19eaf9, 0 0 50px #19eaf9, 0 0 100px #19eaf9;
+}
+button:active{       /* Цвет для тени вокруг кнопки*/
+background: #ffe9e9;
+transform: translate(0em, 0.75em);
+}
+button:active::before{       /* Тень для кнопки*/
+box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+transform: translate(0, 0, -1em);
+translate: translated3d(0, 0, -1em);
+}
+
+
+/*Этот код для нумерованного списка "Содержание"*/
+ol {       
+margin-left: 0;
+padding-left: 0;
+}
+li {
+display: block;
+margin-bottom: 1em;
+margin-left: 1em;
+}
+li:before {
+display: inline-block;
+content: counter(item) ".";
+counter-increment: item;
+width: -2em;
+margin-left: -2em;
+}
+
+
+/*Красная строка*/
+.box {   
+text-indent: 3rem;
+}
+
+
+/*КОММЕНТАРИИЙ*/
+.UDN {   
+padding-left: 10px;
+padding-right: 10px;
+margin: 15px auto;
+border: 6px solid #24d6ea;
+border-top-width: 6px;
+border-right-width: 6px;
+border-bottom-width: 6px;
+border-left-width: 6px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+}
+
+
+/*Начало футера*/
+.new_footer_area {     
+background: #ffffff;
+}
+.new_footer_top {
+padding: 70px 0px 270px;
+position:relative;
+  overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+padding-top: 5px;
+padding-bottom: 50px;
+}
+
+.footer_bottom {
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+color: #7f88a6;
+padding: 27px 0px;
+}
+
+.new_footer_top .company_widget p {
+font-size: 16px;
+font-weight: 300;
+line-height: 28px;
+color: #6a7695;
+margin-bottom: 15px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+border-width: 1px;
+margin-top: 10px;
+}
+
+.btn_get_two:hover {
+background: transparent;
+color: #ed2cd0;
+}
+.btn_get:hover {
+color: #fff;
+background: #6754e2;
+border-color: #6754e2;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+text-decoration: none;
+outline: none;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+margin-bottom: 30px;
+}
+.new_footer_top .f_social_icon a {
+width: 44px;
+height: 44px;
+line-height: 43px;
+background: transparent;
+border: 1px solid #e2e2eb;
+font-size: 24px;
+}
+
+.f_social_icon a {
+width: 46px;
+height: 46px;
+border-radius: 50%;
+font-size: 14px;
+line-height: 45px;
+color: #858da8;
+display: inline-block;
+background: #ebeef5;
+text-align: center;
+-webkit-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;
+}
+
+.ti-vimeo-alt:before {
+content: "\e74a";
+}
+
+.btn_get_two {
+-webkit-box-shadow: none;
+box-shadow: none;
+background: #5e2ced;
+border-color: #5e2ced;
+color: #fff;
+}
+
+.btn_get_two:hover {
+background: transparent;
+color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+background: #5e2ced;
+border-color: #5e2ced;
+color:white;
+}
+.new_footer_top .f_social_icon a + a {
+margin-left: 4px;
+}
+.new_footer_top .f-title {
+margin-bottom: 30px;
+color: #263b5e;
+}
+
+.f_600 {
+font-weight: 600;
+}
+.f_size_18 {
+font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #4b505e;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a {
+color: #6a7695;
+}
+.new_footer_top .footer_bg {
+position: absolute;
+bottom: 0;
+background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+width: 100%;
+height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+width: 330px;
+height: 105px;
+background-size:100%;
+position: absolute;
+bottom: 0;
+left: 30%;
+-webkit-animation: myfirst 19s linear infinite;
+animation: myfirst 19s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+width: 88px;
+height: 100px;
+background-size:100%;
+bottom: 0;
+left: 38%;
+position: absolute;
+-webkit-animation: myfirst 28s linear infinite;
+animation: myfirst 28s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+
+@-webkit-keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+
+@keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+/*Конец моего футера*/
+
+
+
+/* Эффекты для моих ссылочек на соцсети в подвале сайта */
+ul {
+margin: 11px;
+padding: 0;
+display:contents;
+position:fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+ul li {
+margin: 0 -10px;
+}
+
+ul li a {
+position: relative; 
+display:block;
+width: 70px;
+height: 70px;
+text-align: center;
+line-height: 73px;
+background: #1c1a1a;
+border-radius: 50%;
+font-size: 38px;
+color: #00fbf2;
+transition: 0.5s;
+}
+
+ul li a::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: #ffee10;
+transition: 0.8s;
+transform: scale(1);
+z-index: -1;
+}
+
+ul li a:hover::before {
+transform: scale(1.1);
+box-shadow: 0 0 15px #ffee10;
+}
+
+ul li a:hover {
+color: #ffee10;
+box-shadow: 0 0 5px #ffee10;
+text-shadow: 0 0 10px #ffee10;
+}
+
+
+/* HOVER Эффект для моих ссылочек на всём сайте кроме кнопок*/
+.container {
+margin-top: calc(10vh - 20pt / 2);
+}
+
+a {
+font-size: 17pt;
+position: relative;
+color: rgb(255, 0, 0);
+text-decoration: none;
+}
+
+a:hover {
+color: black;
+}
+
+a::before {
+content: "";
+position: absolute;
+display: block;
+width: 100%;
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #19eaf9;   /* Изменяет цвет ссылки */
+transform: scaleX(0);
+transition: transform 0.65s ease;
+}
+
+a:hover::before {
+transform: scaleX(1);
+}
+
+
+body {
+height: 400vh;
+}
+
+::-webkit-scrollbar {
+width: 20px;
+}
+
+::-webkit-scrollbar-track {
+background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(255, 0, 0);
+}
+
+
+/* Плавный скролл до якоря */
+html {
+scroll-behavior: smooth;
+}
+
+
+/* Кнопка вверх */
+.akeconsa-udaneles {
+position: fixed;
+bottom: 55px;
+right: 61px;
+z-index: 9;   
+}
+
+.akeconsa-udaneles {
+height: 66px;
+width: 68px;
+text-align: center;
+background: #000000a2;
+display: block;
+border-radius: 33.3333px;
+box-shadow: 0 0 10px #ffee10;
+}
+.akeconsa-udaneles span {
+color: #f7f0f0;
+font-size: 40px;
+line-height: 64px;
+cursor: pointer;
+}
+
+
+/* Основные тезисы */
+@media (max-width: 768px) {
+.menu-element {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+}
+
+.menu-element {
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 23px;
+line-height: 155%;
+color: #465068;
+text-decoration: none;
+}
+
+@media (max-width: 575px) {
+.nav__article-list {
+    background: none;
+    padding: 15px 30px;
+    margin-bottom: 5px;
+}
+}
+
+.nav__article-list li {
+color: #455271;
+font-size: 18px;
+font-weight: 500;
+line-height: 25px; 
+}
+
+.menu-element-item {
+list-style: none;
+font-family: 'TT Norms', sans-serif;
+margin-left: 45px;
+margin-top: 3px;
+}
+
+
+:root {
+--ui-icon-size-xs: 26px;
+--ui-icon-size-sm: 31px;
+--ui-icon-size-md: 39px;
+--ui-icon-size-lg: 47px;
+--ui-icon-size: 39px;
+--ui-icon-service-bg-color: #ebeff2;
+}
+
+.container p {
+margin-bottom: 10px;
+}
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: none !important;
+list-style: none;
+}
+
+p {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+}
+
+@media (max-width: 575px) {
+.nav__article-title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+}
+.nav__article-title {
+background-color: #DF2143;
+border-radius: 22px 22px 0 0;
+padding: 15px 60px;
+color: #FFF;
+font-size: 26px;
+font-weight: 700;
+line-height: 25px;
+}
+
+::marker {
+unicode-bidi: isolate;
+font-variant-numeric: tabular-nums;
+text-transform: none;
+text-indent: 0px !important;
+text-align: start !important;
+text-align-last: start !important;
+}
+
+.nav__article-info {
+background-color: #F5F9FC;
+border-radius: 20px;
+box-shadow: 0 12px 23px 0 rgba(1, 230, 255, 0.362);
+margin: 95px;
+}
+
+
+/* Border "Основные тезисы" */
+.wally {   
+display: block;
+list-style-type: decimal;
+margin-block-start: 2em;
+margin-block-end: 5em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 15px;
+unicode-bidi: isolate;
+}
+
+
+/* Кастомный курсор */
+.notCursor {
+cursor: none;
+}
+
+#kursorWrapper {
+position: fixed;
+z-index: 99;
+overflow: hidden;
+pointer-events: none;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+div[class*='kursor'] {
+position: fixed;
+pointer-events: none;
+transform: translate(-50%, -50%);
+z-index: 10000;
+box-shadow: 0 0px 25px 0 rgba(0, 255, 187, 0.544);
+}
+
+div[class*='kursor'].kursor--hidden {
+opacity: 0;
+width: 0px;
+height: 0px;
+}
+
+div[class*='kursor'].kursor--4 {
+left: 0px;
+top: 0px;
+width: 45px;
+height: 45px;
+border: 2px solid rgba(var(--k-color), 0.3);
+border-radius: 50%;
+transition: all 0.0s ease, top 0.0s ease-out, left 0.0s ease-out;
+}
+
+div[class*='kursor'].kursor--4 + .kursorChild {
+display: block;
+width: 6.5px;
+height: 6.5px;
+background: rgba(var(--k-color), 1);
+border-radius: 50%;
+transition: all 0.0s ease, top 0.00s ease-out, left 0.00s ease-out;
+}
+
+div[class*='kursor'].kursor--4.--hover {
+width: 30px;
+height: 30px;
+background: rgba(var(--k-color), 0.1);
+border: 3px solid rgba(var(--k-color), 0);
+}
+
+div[class*='kursor'].kursor--4.--hover + .kursorChild {
+width: 25px;
+height: 25px;
+background: rgba(var(--k-color), 0.1);
+}
+
+div[class*='kursor'].kursor--4.kursor--down {
+width: 5px;
+height: 5px;
+}
+
+div[class*='kursor'].kursor--4.kursor--down + .kursorChild {
+width: 10px;
+height: 10px;
+}
+
+div[class*='kursor'].kursor--4.kursor--down + .kursorChild:after {
+width: 40px !important;
+height: 40px !important;
+opacity: 0;
+border-radius: 50%;
+border: 1px solid;
+border-color: rgba(var(--k-color), 1);
+transition: all 0.0s ease;
+}
+
+div[class*='kursorChild'] {
+position: fixed;
+pointer-events: none;
+transform: translate(-50%, -50%);
+display: none;
+overflow: hidden;
+}
+
+div[class*='kursorChild'].kursorChild[class*='--hidden'] {
+opacity: 0;
+width: 0px;
+height: 0px;
+}
+
+div[class*='kursorChild'].kursorChild:after {
+content: '';
+pointer-events: none;
+width: 0px;
+height: 0px;
+position: absolute;
+left: 50%;
+top: 50%;
+opacity: 1;
+border: 0px solid rgba(var(--k-color), 0.5);
+transform: translate(-50%, -50%);
+}
+
+.kursor--absolute {
+position: absolute !important;
+z-index: 2000;
+}
+
+@media screen and (max-width: 768px) {
+.notCursor * {
+  cursor: auto;
+}
+
+div[class*='kursor'] {
+  display: none !important;
+}
+
+div[class*='kursorChild'] {
+  display: none !important;
+}
+}
+
+@media screen and (max-width: 812px) and (max-height: 430px) and (orientation: landscape) {
+div[class*='kursor'] {
+  display: none !important;
+}
+
+div[class*='kursorChild'] {
+  display: none !important;
+}
+
+.notCursor * {
+  cursor: auto;
+}
+}
+
+
+/* DarkMode - переключение режима на сайте */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root,
+:root.light {
+--bg-color: #0d0d0dfc;
+--text-color: #ffffff;
+}
+
+:root.dark {
+--bg-color: #fff;
+--text-color: #123;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
+
+main {
+display: flex;
+flex-direction: column;
+justify-content: right;
+align-items: center;
+width: 90%;
+max-width: 1280px;
+margin: 0 auto;
+padding: 2.5rem 0;
+height: 10vh;
+box-sizing: border-box;
+}
+
+.theme-btn {
+width: 4.5em;
+height: 4.5em;
+padding: 0.0em;
+border-radius: 50%;
+cursor: pointer;
+border: none;
+background-color: transparent;
+box-shadow: none;
+}
+
+.theme-btn:hover {
+box-shadow: 0 0 65px #ffbffb;
+}
+
+.theme-btn.light:hover {
+box-shadow: 0 0 65px #d9ff00;
+}
+
+#toggle-container {
+position: relative;
+}
+
+.theme-btn img {
+height: 100%;
+width: 100%;
+object-fit: fill;
+}
+
+.theme-btn.light {
+display: none;
+box-shadow: none;
+}
+
+.dark .theme-btn.dark {
+display: none;
+}
+
+.dark .theme-btn.light {
+display: block;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+body {
+height: 100vh;
+display: flex;
+}
+
+.wrapper {
+display: flex;
+justify-content: left;
+}
+
+.cta {
+display: flex;
+padding: 8px 33px;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+font-size: 40px;
+color: white;
+background: #6225E6;
+transition: 1s;
+box-shadow: 7px 7px 0 rgb(16, 15, 15);
+transform: skewX(-15deg);
+}
+
+.cta:focus {
+outline: none; 
+}
+
+.cta:hover {
+transition: 0.5s;
+box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+transition: 0.5s;
+margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+transition: 0.5s;
+margin-right: 50px;
+}
+
+#pam {
+transform: skewX(10deg) 
+}
+
+#pum:nth-child(2) {
+width: 20px;
+margin-left: 20px;
+position: relative;
+top: 7%;
+}
+
+
+/*SVG*/
+path.one {
+transition: 0.4s;
+transform: translateX(-60%);
+}
+
+path.two {
+transition: 0.5s;
+transform: translateX(-30%);
+}
+
+.cta:hover path.one {
+transform: translateX(0%);
+animation: color_anim 1s infinite 0.8s;
+}
+
+.cta:hover path.two {
+transform: translateX(0%);
+animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.three {
+animation: color_anim 1s infinite 0.4s;
+}
+
+
+/* SVG анимация */
+@keyframes color_anim {
+0% {
+    fill: white;
+}
+50% {
+    fill: #00ff1a;
+}
+100% {
+    fill: white;
+}
+}
+
+
+/*  Цвет выделения текста */
+::selection {
+background-color: #ec033d;
+color: #ffffff;
+}
+
+
+/* Преолайдер */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 99999;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
+}
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+.loaded #loader {
+  opacity: 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Часто задаваемые вопросы */
+.contra {
+  margin: 0 auto;
+  padding: 40px;
+  width: 650px;
+}
+
+.faq-question {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 60px 10px 10px;
+  font-size: 30.5px;
+  font-weight: 400;
+  border-bottom: 1px solid;
+  line-height: 47px;
+}
+.faq-question:hover,
+.faq-question:hover::after {
+  cursor: pointer;
+  font-weight: bold;
+}
+.faq-question.active {
+  border-bottom: 3px solid;
+  font-weight: bold;
+}
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 44.5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.faq-question.active::after {
+  content: '-';
+}
+.faq-answer {
+  opacity: 0;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 27.5px;
+  line-height: 36px;
+  transition: all 0.2s ease 0.15s;
+}
+.faq-answer.active {
+  opacity: 1;
+  padding: 20px;
+  max-height: 100%;
+  transition: all 0.35s ease 0.15s;
+}
+
+
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #ff5353;
+}
+.accordion a:hover::after {
+  border: 1px solid #ff5353;
+}
+.accordion a.active {
+  color: #ff5353;
+  border-bottom: 1px solid #ff5353;
+}
+.accordion a::after {
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+.accordion a.active::after {
+  content: '\f209';
+  color: #ff5353;
+  border: 1px solid #ff5353;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+
+/* Добавляю черный цвет фона к верхней панели навигации */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Стилизую ссылки внутри панели навигации */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 29px 43px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+/* Изменение цвета ссылок при наведении курсора мыши */
+.topnav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Тут скрываю ссылку, которая должна открывать и закрывать TOPNAV на маленьких экранах */
+.topnav .icon {
+  display: none;
+}
+
+/* Когда ширина экрана будет меньше 600 пикселей, скрываю все ссылки, кроме первой ("Главная страница"). Показывать ссылку, которая содержит, следует, открывая и закрывая TOPNAV (значок). */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Класс "responsive" добавляется в topnav с помощью JavaScript, если пользователь нажимает на значок. Этот класс позволяет topnav хорошо выглядеть на небольших экранах (отображать ссылки вертикально, а не горизонтально). */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
